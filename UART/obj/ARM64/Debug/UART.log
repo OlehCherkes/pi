@@ -1,0 +1,9 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.50.217'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  UART.vcxproj -> C:\Users\Oleh\Desktop\Pi\UART\bin\ARM64\Debug\UART.out

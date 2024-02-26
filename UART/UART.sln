@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UART", "UART.vcxproj", "{FC139AC2-2A32-43AC-909E-8F290ABF090A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM.Build.0 = Debug|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM64.Build.0 = Debug|ARM64
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM.ActiveCfg = Release|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM.Build.0 = Release|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM.Deploy.0 = Release|ARM
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM64.ActiveCfg = Release|ARM64
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM64.Build.0 = Release|ARM64
+		{FC139AC2-2A32-43AC-909E-8F290ABF090A}.Release|ARM64.Deploy.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D8A3CEB-7C83-4F9A-847E-92123E1CDDD7}
+	EndGlobalSection
+EndGlobal

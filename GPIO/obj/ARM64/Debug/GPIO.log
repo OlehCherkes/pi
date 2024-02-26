@@ -1,9 +1,9 @@
 ﻿  Validating sources
-  Copying sources remotely to '192.168.50.217'
+  Copying sources remotely to '192.168.21.81'
   Validating architecture
   Validating architecture
   Starting remote build
   Compiling sources:
   main.cpp
   Linking objects
-  GPIO.vcxproj -> C:\Users\Oleh\Desktop\GPIO\bin\ARM64\Debug\GPIO.out
+  GPIO.vcxproj -> C:\Users\Oleh\Desktop\Pi\GPIO\bin\ARM64\Debug\GPIO.out

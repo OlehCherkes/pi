@@ -1,34 +1,61 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <spidev_lib++.h>
+#include <iostream>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <linux/spi/spidev.h>
 
-spi_config_t spi_config;
-uint8_t tx_buffer[32];
-uint8_t rx_buffer[32];
+int main() {
+  const char* device = "/dev/spidev0.0";
+  int spiHandle;
 
-int  main(void)
-{
-
-  SPI* mySPI = NULL;
-
-  spi_config.mode = 0;
-  spi_config.speed = 1000000;
-  spi_config.delay = 0;
-  spi_config.bits_per_word = 8;
-
-  mySPI = new SPI("/dev/spidev1.0", &spi_config);
-
-  if (mySPI->begin())
-  {
-    memset(tx_buffer, 0, 32);
-    memset(rx_buffer, 0, 32);
-    sprintf((char*)tx_buffer, "hello world");
-    printf("sending %s, to spidev2.0 in full duplex \n ", (char*)tx_buffer);
-    mySPI->xfer(tx_buffer, strlen((char*)tx_buffer), rx_buffer, strlen((char*)tx_buffer));
-    printf("rx_buffer=%s\n", (char*)rx_buffer);
-    //mySPI->end();
-    delete mySPI;
+  // Open SPI
+  spiHandle = open(device, O_RDWR);
+  if (spiHandle == -1) {
+    std::cerr << "Unable to open SPI device." << std::endl;
+    return 1;
   }
-  return 1;
+
+  // Mod SPI
+  int mode = SPI_MODE_0;
+  if (ioctl(spiHandle, SPI_IOC_WR_MODE, &mode) == -1) {
+    std::cerr << "Unable to set SPI mode." << std::endl;
+    return 1;
+  }
+
+  // Speed SPI
+  int speed = 500000; // Hz
+  if (ioctl(spiHandle, SPI_IOC_WR_MAX_SPEED_HZ, &speed) == -1) {
+    std::cerr << "Unable to set SPI speed." << std::endl;
+    return 1;
+  }
+
+  // Eõample send
+  unsigned char buffer[3] = { 0x01, 0x02, 0x03 };
+  unsigned char rx_buffer[3] = { 0 };
+
+  struct spi_ioc_transfer transfer = {
+      .tx_buf = (unsigned long)buffer,
+      .rx_buf = (unsigned long)NULL,
+      .len = sizeof(buffer),
+      .speed_hz = speed,
+      .bits_per_word = 8,
+  };
+  if (ioctl(spiHandle, SPI_IOC_MESSAGE(1), &transfer) == -1) {
+    std::cerr << "SPI transfer failed." << std::endl;
+    return 1;
+  }
+
+  std::cout << "SPI send." << std::endl;
+
+  // Process received data
+  std::cout << "Received data: ";
+  for (int i = 0; i < sizeof(rx_buffer); ++i) {
+    std::cout << std::hex << (int)rx_buffer[i] << " ";
+  }
+  std::cout << std::endl;
+
+
+  close(spiHandle);
+
+  return 0;
 }

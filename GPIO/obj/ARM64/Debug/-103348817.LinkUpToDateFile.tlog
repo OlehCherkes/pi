@@ -1,0 +1,1 @@
+g++ -o "/root/projects/GPIO/bin/ARM64/Debug/GPIO.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/GPIO/obj/ARM64/Debug/main.o -lgpiod

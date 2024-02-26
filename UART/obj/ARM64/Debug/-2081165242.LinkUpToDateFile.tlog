@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/UART/bin/ARM64/Debug/UART.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/UART/obj/ARM64/Debug/main.o -lboost_system -lboost_thread
