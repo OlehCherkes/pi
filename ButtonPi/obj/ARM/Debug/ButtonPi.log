@@ -1,0 +1,21 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.50.217'
+  Validating architecture
+  Validating architecture
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(203,5): warning : Current project architecture 'ARM' is incompatible with the remote system architecture 'ARM64' ('aarch64'). Please switch the project architecture to 'ARM64' in Configuration Manager. If you are cross-compiling you can ignore this warning.
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning :    11 |         char* chipname = "gpiochip0";
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning :       |                          ^~~~~~~~~~~
+  Linking objects
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/obj/ARM/Debug/main.o: in function `main':
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(19): error : (.text+0x4c): undefined reference to `gpiod_chip_open_by_name'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:26:(.text+0x80): undefined reference to `gpiod_chip_get_line'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:33:(.text+0xb8): undefined reference to `gpiod_line_request_rising_edge_events'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:43:(.text+0xf8): undefined reference to `gpiod_line_event_wait'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:54:(.text+0x150): undefined reference to `gpiod_line_event_read'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:69:(.text+0x1b8): undefined reference to `gpiod_line_release'
+/usr/bin/ld : error : /home/pi/projects/ButtonPi/main.cpp:71:(.text+0x1c0): undefined reference to `gpiod_chip_close'
+collect2 : error : ld returned 1 exit status

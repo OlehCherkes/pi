@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/Bluetooth/bin/ARM64/Debug/Bluetooth.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/Bluetooth/obj/ARM64/Debug/main.o -lbluetooth

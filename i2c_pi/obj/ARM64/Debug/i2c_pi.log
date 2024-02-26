@@ -1,0 +1,39 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.50.217'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(76,12): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(76,12): warning :    76 |   return n + 6 * (n / 10);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(76,12): warning :       |          ~~^~~~~~~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(80,12): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(80,12): warning :    80 |   return n - 6 * (n >> 4);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(80,12): warning :       |          ~~^~~~~~~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(135,21): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(135,21): warning :   135 |   tm->sec = readData(RTCSEC);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(135,21): warning :       |             ~~~~~~~~^~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(136,21): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(136,21): warning :   136 |   tm->min = readData(RTCMIN);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(136,21): warning :       |             ~~~~~~~~^~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(137,22): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(137,22): warning :   137 |   tm->hour = readData(RTCHOUR);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(137,22): warning :       |              ~~~~~~~~^~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(138,22): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(138,22): warning :   138 |   tm->wday = readData(RTCWKDAY);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(138,22): warning :       |              ~~~~~~~~^~~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(139,21): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(139,21): warning :   139 |   tm->day = readData(RTCDATE);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(139,21): warning :       |             ~~~~~~~~^~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(140,23): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(140,23): warning :   140 |   tm->month = readData(RTCMTH);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(140,23): warning :       |               ~~~~~~~~^~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(141,21): warning : conversion from ‘int’ to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(141,21): warning :   141 |   tm->year= readData(RTCYEAR);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(141,21): warning :       |             ~~~~~~~~^~~~~~~~~
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(203,20): warning : conversion from ‘int’ to ‘unsigned char’ may change value [-Wconversion]
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(203,20): warning :   203 |     data = readData(reg);
+C:\Users\Oleh\Desktop\i2c_pi\main.cpp(203,20): warning :       |            ~~~~~~~~^~~~~
+  Linking objects
+  i2c_pi.vcxproj -> C:\Users\Oleh\Desktop\i2c_pi\bin\ARM64\Debug\i2c_pi.out

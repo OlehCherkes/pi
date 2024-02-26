@@ -1,0 +1,1 @@
+g++ -o "/home/pi/projects/i2c_pi/bin/ARM64/Debug/i2c_pi.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/pi/projects/i2c_pi/obj/ARM64/Debug/main.o -lgpiod -li2c

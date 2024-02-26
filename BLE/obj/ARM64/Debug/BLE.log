@@ -1,0 +1,13 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.21.81'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\BLE\main.cpp(144,27): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\Oleh\Desktop\BLE\main.cpp(144,27): warning :   144 |                 len = read(device, buf, sizeof(buf));
+C:\Users\Oleh\Desktop\BLE\main.cpp(144,27): warning :       |                       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Oleh\Desktop\BLE\main.cpp(111,14): warning : variable ‘start_time’ set but not used [-Wunused-but-set-variable]
+  Linking objects
+  BLE.vcxproj -> C:\Users\Oleh\Desktop\BLE\bin\ARM64\Debug\BLE.out

@@ -1,0 +1,15 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.21.81'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(14,8): warning : unused variable ‘addr’ [-Wunused-variable]
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(14,8): warning :    14 |   char addr[19] = { 0 };
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(14,8): warning :       |        ^~~~
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(15,8): warning : unused variable ‘name’ [-Wunused-variable]
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(15,8): warning :    15 |   char name[248] = { 0 };
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(15,8): warning :       |        ^~~~
+  Linking objects
+  Bluetooth.vcxproj -> C:\Users\Oleh\Desktop\Bluetooth\bin\ARM64\Debug\Bluetooth.out

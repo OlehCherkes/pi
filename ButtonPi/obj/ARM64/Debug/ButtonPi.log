@@ -1,0 +1,12 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.21.81'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning :    11 |         char* chipname = "gpiochip0";
+C:\Users\Oleh\Desktop\ButtonPi\main.cpp(11,26): warning :       |                          ^~~~~~~~~~~
+  Linking objects
+  ButtonPi.vcxproj -> C:\Users\Oleh\Desktop\ButtonPi\bin\ARM64\Debug\ButtonPi.out

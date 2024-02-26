@@ -1,0 +1,1 @@
+g++ -o "/root/projects/BLE/bin/ARM64/Debug/BLE.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /root/projects/BLE/obj/ARM64/Debug/main.o -lbluetooth

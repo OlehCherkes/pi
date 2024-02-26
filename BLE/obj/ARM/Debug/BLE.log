@@ -1,0 +1,19 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.21.81'
+  Validating architecture
+  Validating architecture
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(203,5): warning : Current project architecture 'ARM' is incompatible with the remote system architecture 'ARM64' ('aarch64'). Please switch the project architecture to 'ARM64' in Configuration Manager. If you are cross-compiling you can ignore this warning.
+  Starting remote build
+  Linking objects
+/usr/bin/ld : error : /home/pi/projects/BLE/obj/ARM/Debug/main.o: in function `main':
+C:\Users\Oleh\Desktop\BLE\main.cpp(30): error : (.text+0x19c): undefined reference to `hci_get_route'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:30:(.text+0x1a0): undefined reference to `hci_open_dev'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:48:(.text+0x228): undefined reference to `hci_send_req'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:50:(.text+0x240): undefined reference to `hci_close_dev'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:63:(.text+0x2d0): undefined reference to `hci_send_req'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:65:(.text+0x2e8): undefined reference to `hci_close_dev'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:79:(.text+0x350): undefined reference to `hci_send_req'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:81:(.text+0x368): undefined reference to `hci_close_dev'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:93:(.text+0x3dc): undefined reference to `hci_close_dev'
+/usr/bin/ld : error : /home/pi/projects/BLE/main.cpp:115:(.text+0x474): undefined reference to `ba2str'
+collect2 : error : ld returned 1 exit status

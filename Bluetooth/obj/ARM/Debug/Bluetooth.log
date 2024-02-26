@@ -1,0 +1,18 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.21.81'
+  Validating architecture
+  Validating architecture
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(203,5): warning : Current project architecture 'ARM' is incompatible with the remote system architecture 'ARM64' ('aarch64'). Please switch the project architecture to 'ARM64' in Configuration Manager. If you are cross-compiling you can ignore this warning.
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(22,16): warning : unused variable ‘ii’ [-Wunused-variable]
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(22,16): warning :    22 |   inquiry_info ii;
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(22,16): warning :       |                ^~
+  Linking objects
+/usr/bin/ld : error : /home/pi/projects/Bluetooth/obj/ARM/Debug/main.o: in function `main':
+C:\Users\Oleh\Desktop\Bluetooth\main.cpp(14): error : (.text+0x30): undefined reference to `hci_get_route'
+/usr/bin/ld : error : /home/pi/projects/Bluetooth/main.cpp:15:(.text+0x3c): undefined reference to `hci_open_dev'
+/usr/bin/ld : error : /home/pi/projects/Bluetooth/main.cpp:23:(.text+0x8c): undefined reference to `hci_inquiry'
+/usr/bin/ld : error : /home/pi/projects/Bluetooth/main.cpp:32:(.text+0xf4): undefined reference to `ba2str'
+collect2 : error : ld returned 1 exit status

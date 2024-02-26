@@ -1,0 +1,12 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.50.217'
+  Validating architecture
+  Validating architecture
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(203,5): warning : Current project architecture 'ARM' is incompatible with the remote system architecture 'ARM64' ('aarch64'). Please switch the project architecture to 'ARM64' in Configuration Manager. If you are cross-compiling you can ignore this warning.
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\SPI\main.cpp(4,10): error : spidev_lib++.h: No such file or directory
+C:\Users\Oleh\Desktop\SPI\main.cpp(4,10): error :     4 | #include <spidev_lib++.h>
+C:\Users\Oleh\Desktop\SPI\main.cpp(4,10): error :       |          ^~~~~~~~~~~~~~~~
+C:\Users\Oleh\Desktop\SPI\main.cpp(4,10): error : compilation terminated.
