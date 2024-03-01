@@ -1,0 +1,15 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.50.217'
+  Validating architecture
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+C:\Users\Oleh\Desktop\A2\main.cpp(130,30): warning : conversion from ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} to ‘std::vector<unsigned char>::value_type’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\A2\main.cpp(130,30): warning :   130 |   pacData.push_back(data.size());
+C:\Users\Oleh\Desktop\A2\main.cpp(130,30): warning :       |                     ~~~~~~~~~^~
+C:\Users\Oleh\Desktop\A2\main.cpp(149,35): warning : conversion from ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} to ‘uint8_t’ {aka ‘unsigned char’} may change value [-Wconversion]
+C:\Users\Oleh\Desktop\A2\main.cpp(149,35): warning :   149 |   header.dataLength = data.size() + 0x03;
+C:\Users\Oleh\Desktop\A2\main.cpp(149,35): warning :       |                       ~~~~~~~~~~~~^~~~~~
+  Linking objects
+  A2.vcxproj -> C:\Users\Oleh\Desktop\A2\bin\ARM64\Debug\A2.out

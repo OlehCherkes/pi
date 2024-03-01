@@ -30,7 +30,7 @@ int main() {
   }
 
   // Eõample send
-  unsigned char buffer[3] = { 0x01, 0x02, 0x03 };
+  unsigned char buffer[5] = { 0x1, 0x2, 0x3, 0x4, 0x5};
   unsigned char rx_buffer[3] = { 0 };
 
   struct spi_ioc_transfer transfer = {
